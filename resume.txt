@@ -1,0 +1,52 @@
+NICHOLAS A. WILLIAMS
+815 S Adams St
+Tacoma, WA 98405-2140
+
+OBJECTIVE
+	- Business-minded software developer with over 8 years of development experience.
+	- Well-versed in web development languages and technologies in particular.
+	- Entrepreneurial experience, with a preference for a fast-paced business environment.
+
+TECHNICAL PROFILE
+	Languages:			PHP, Ruby, Python, JavaScript, Java, C, C++, SQL (MySQL, Oracle, MS T-SQL), ActionScript, HTML/CSS, XML
+	Platforms:			LAMP, iOS (web & native), Java
+	APIs/Tools:			jQuery, Twitter API, Google APIs (Maps, Search), Google Search Appliances, Interactive Brokers Trading API
+	Operating Systems:	Windows (NT - 7), *NIX (UNIX, Mac OS X, Linux, Solaris)
+
+PROFESSIONAL EXPERIENCE
+	- Web Application Developer
+	  SiteCrafting, Inc.
+		* Built web applications for clients from various industries
+	
+	- Software Developer
+	  Customer Feedback, LLC
+		* Was a primary developer for the company’s proprietary Java EE based business intelligence system. This system was intended to enable the company to grow beyond its regional base.
+		* In charge of all Crystal Reports related aspects of CSIS (report design, API integration, folder structure, user accounts/permissions, etc.).
+		* Developed Flash / ActionScript based client applications for use within CSIS.
+		* Using Crystal Reports / BusinessObjects Enterprise, developed customized complex reports for each client of the company.
+		* Managed BusinessObjects Enterprise environment, setting up user accounts & permissions, folder structures for each client, and general troubleshooting.
+	
+	- Freelance Web Developer
+	  Progressive Design Studios, LLC
+		* Developed websites and web applications for clients using PHP, XHTML, JavaScript, and MySQL database backends.
+		* Managed multiple projects simultaneously, offering a wide range of services including business identities (logos, business cards, etc.), basic websites, advanced web applications (search capabilities, user account systems, CMS-style frameworks, etc.).
+		* Maintained financial accounts, performed licensing and registration tasks, communicated with clients, and developed marketing strategies.
+		* Recruited and organized teams as needed for each project. Managed groups and projects in an organized fashion, utilizing collaboration software to maximize efficiency.
+	
+	- Desktop Technical Support Intern (January 2002 - May 2002)
+	  Russell Investments
+		* Prepared and configured newly received desktops and notebooks for distribution to employees.
+		* Provided on-call desktop technical support to local employees.
+		* Utilized software inventory software to add employee software profiles to a central database.
+
+EDUCATION
+	- Bachelor of Science (August 2006)
+	  Dual focus in Computer Science & Business
+	  University of Puget Sound, Tacoma, WA
+
+ACCOMPLISHMENTS
+	- Rank of Eagle (January 2001)
+	  Boy Scouts of America, Walnut Creek, CA
+	
+	- NWEN Member (November 2005 to Present)
+	  Northwest Entrepreneur Network, Bellevue, WA
