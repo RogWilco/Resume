@@ -1,0 +1,305 @@
+/* @group Common */
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	body {
+		font-family: arial, sans-serif;
+		width: 100%;
+	}
+	
+	h1 {
+		font-size: 28pt;
+	}
+	
+	h2 {
+		color: #ffffff;
+		font-size: 12pt;
+		margin: 0.75em 0 0.5em 0;
+		padding: 0.15em 0;
+	}
+	
+	h3 {
+		font-size: 10pt;
+		margin: 0.5em 0;
+	}
+
+	ul {
+		list-style-type: square;
+		margin: 0 0 0 2em;
+	}
+	
+	li {
+		line-height: 1.5em;
+		margin: 0 0 0.5em 0;
+	}
+	
+	.tag {
+		background: #999999;
+		border: 1px solid #999999;
+		border-radius: 4px;
+		color: #ffffff;
+		display: inline-block;
+		font-weight: bold;
+		font-size: 10pt;
+		line-height: 0.9em;
+		margin: 2px;
+		padding: 5px;
+	}
+
+	.tag:hover,
+	.tag.hover,
+	.tag.active {
+		background: #ffa100;
+		border-color: #ffa100;
+		cursor: pointer;
+	}
+
+	.clear {
+		clear: both;
+	}
+/* @end */
+
+/* @group Content */
+	.resume,
+	.letter {
+		width: 1200px;
+		margin: 2em auto;
+	}
+	
+	.content {
+		padding: 0.75em;
+	}
+	
+	.footer {
+		background: #999999;
+		border-radius: 10px 0;
+		color: #ffffff;
+		font-size: 10pt;
+		font-weight: bold;
+		margin-top: 4em;
+		padding: 10px;
+		text-align: right;
+		width: 20em;
+	}
+	
+	.profile,
+	.history {
+		float: left;
+		position: relative;
+	}
+	
+	/* @group Profile */
+		.profile {
+			height: 100%;
+			width: 40%;
+			z-index: 2;
+		}
+		
+		.profile .header {
+			background: #555555;
+			background-size:  50% 50%;
+			background-repeat: no-repeat;
+			border-radius: 0 20px 0 20px;
+			color: #ffa100;
+			margin: 0;
+			padding: 14px;
+		}
+	
+		.profile .header .meta {
+			color: #ffffff;
+			line-height: 1.5em;
+		}
+	
+		.profile .content {
+			font-size: 12pt;
+			line-height: 1.5em;
+			margin:  10px 2px 0 14px;
+			padding: 0;
+		}
+		
+		.profile h2 {
+			background: #ffa100;
+			background-size:  50% 50%;
+			background-repeat: no-repeat;
+			border-radius: 0 10px 0 10px;
+			font-size: 14pt;
+			margin-top: 1.75em;
+			padding: 7px;
+		}
+		
+		.profile h2:first-of-type {
+			margin-top: 0;
+		}
+	
+		.profile h3 {
+			font-size: 12pt;
+			margin: 0.75em 0 0.15em 0;
+			padding: 0 !important;
+		}
+		
+		.profile p {
+			margin: 0 1em 1em 2em;
+		}
+		
+		.profile li {
+			margin-right: 1em;
+		}
+	/* @end */
+	
+	/* @group History */
+		.history {			
+			border-left: 2px solid #555555;
+			font-family: arial, sans-serif;
+			margin: 3.8em 0 1em -2px;
+			width: 59%;
+			z-index: 2;
+			
+			-webkit-border-top-right-radius: 5px;
+			-webkit-border-bottom-right-radius: 5px;
+		}
+		
+		.history div.stem {
+			border-top: 2px solid #555555;
+			border-left: 2px solid #555555;
+			border-radius: 20px 0;
+			height: 40px;
+			width: 40px;
+			position: absolute;
+		}
+		
+		.history h2 {
+			border-bottom: 1px solid #aaa;
+			display: none;
+		}
+		
+		.history h4 {
+			color: #ffa100;
+			font-size: 15pt;
+			margin: -0.6em 0 0 0;
+			position: absolute;
+			right: 1em;
+		}
+		
+		.history h3 {
+			color: #666666;
+			font-size: 12pt;
+			margin-top: 1em;
+			position: absolute;
+			left: 60px;
+			/*right: 1em;*/
+		}
+		
+		.history h5 {
+			color: #ffa100;
+			float: left;
+			font-size: 15pt;
+			margin-top: -1.6em;
+			margin-left: 40px;
+			margin-bottom: -2em;
+			padding: 1em 0 1em 0;
+			position: absolute;
+			width: 50%;
+		}
+		
+		.history h5:before {
+			color: #555555;
+			content: "▶︎ ";
+		}
+		
+		.history .content {
+			margin-left: -2px;
+			padding: 0;
+		}
+
+		.history 
+	
+		.history ul {
+			clear: both;
+		}
+		
+		.history li {
+			font-size: 12pt;
+		}
+		
+		.history ul.experience {
+			list-style: none;
+			margin: 0;
+		}
+		
+		.history ul.experience li.employer {
+			margin-top: 3em;
+		}
+		
+		.history ul.experience li.employer:first-of-type h5 {
+			margin-top: -1.6em;
+		}
+
+		.history ul.experience li.employer .details {
+			padding: 3em 0 0 3em;
+		}
+	
+		.history ul.experience li.employer .details ul {
+			margin-left: 40px;
+		}
+
+		.history ul.experience li.employer .details > div.tags {
+			margin-left: 1em;
+		}
+	/* @end */
+	
+	/* @group Letter */
+		.letter .date {
+			margin: 3em 0;
+		}
+	
+		.letter .addressee {
+			margin: 3em 0;
+		}
+	
+		.letter .body {
+			
+		}
+		
+		.letter .body p.condensed {
+			line-height: 1em;
+		}
+		
+		.letter .body p {
+			line-height: 1.5em;
+			margin-bottom: 1em;
+		}
+	/* @end */
+/* @end */
+
+@media (prefers-color-scheme: dark) {
+	html {
+		background-color: #333333;
+		color: #cccccc;
+	}
+
+	.tag {
+		background: #444444;
+		border: 1px solid #666;
+		color: #aaaaaa;
+	}
+
+	.tag:hover,
+	.tag.hover,
+	.tag.active {
+		background: #444444;
+		border: 1px solid #ffa100;
+		color: #ffa100;
+	}
+
+	.profile h2 {
+		background: #ffa20066;
+		border: 1px solid #ffa100;
+		color: #ffa100;
+	}
+
+	.history h3 {
+		color: #888888;
+	}
+}
