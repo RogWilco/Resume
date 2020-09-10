@@ -7,12 +7,6 @@
 		<title>Nick Williams, Professional Profile</title>
 	</head>
 	<body>
-		<div class="controls">
-			<div class="toggle">
-				<div class="switch"></div>
-			</div>
-			<div class="label">Dark Mode</div>
-		</div>
 		<div class="resume">
 			<div class="profile">
 				<div class="header">
@@ -192,7 +186,7 @@
 									</li>
 								</ul>
 							</div>
-							<div class="spacer">
+							<div class="spacer"></div>
 						</li>
 						<li class="employer">
 							&nbsp;
@@ -259,7 +253,7 @@
 									</li>
 								</ul>
 							</div>
-							<div class="spacer">
+							<div class="spacer"></div>
 						</li>
 						<li class="employer">
 							&nbsp;
@@ -457,21 +451,6 @@
 			<div class="clear"></div>
 		</div>
 		<div class="clear"></div>
-		<script src="node_modules/jquery/dist/jquery.js"></script>
-		<script>
-
-			const getTagClass = (e) => (e.target.className.match(/(^|\s)(tag\-[^\s]*)/) || [,,''])[2]
-
-			$('.tag').hover((e) => {
-				$(`.${getTagClass(e)}`).addClass('hover')
-			}, (e) => {
-				$(`.${getTagClass(e)}`).removeClass('hover')
-			})
-
-			$('.tag').click((e) => {
-				$(`.${getTagClass(e)}`).toggleClass('active')
-			})
-
-		</script>
+		<script src="bundle.js"></script>
 	</body>
 </html>
