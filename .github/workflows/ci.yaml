@@ -1,0 +1,31 @@
+name: CI
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+jobs:
+  deploy:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Environment
+        uses: actions/setup-node@v2.1.1
+        with:
+          node-version: 10.x
+          check-latest: true
+      - name: Dependencies
+        run: npx yarn install --frozen-lockfile
+      - name: Build
+        run: yarn dist
+      - name: Deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
+        with:
+          server: nickawilliams.com
+          username: nickawil
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          local_path: ./dist/*
+          remote_path: /home/nickawil/websites/nickawilliams/www
+          args: -o ConnectTimeout=5
