@@ -21,9 +21,14 @@
     "jquery": "^3.5.1"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/exec": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
+    "conventional-changelog-eslint": "^3.0.8",
     "copy-webpack-plugin": "^6.1.0",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.0.2",
+    "semantic-release": "^17.1.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "yarn": "^1.22.5"
