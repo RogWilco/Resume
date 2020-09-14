@@ -6,7 +6,8 @@
       {
         "releaseRules": [
           { "type": "Release", "release": false },
-          { "type": "Merge", "release": false }
+          { "type": "Merge", "release": false },
+          { "type": "IaC", "release": false }
         ]
       }
     ],
