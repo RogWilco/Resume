@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Environment
-        uses: actions/setup-node@v2.1.1
+        uses: actions/setup-node@v4
         with:
-          node-version: 10.x
+          node-version-file: package.json
           check-latest: true
       - name: Dependencies
         run: npx yarn install --frozen-lockfile
@@ -20,13 +20,12 @@ jobs:
         run: yarn dist
       - name: Import GPG
         id: import_gpg
-        uses: crazy-max/ghaction-import-gpg@v2.2.0
+        uses: crazy-max/ghaction-import-gpg@v6.1.0
         with:
           git_user_signingkey: true
           git_commit_gpgsign: true
-        env:
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-          PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
