@@ -25,7 +25,7 @@ The source repository for my amazing resume!
    $> yarn dist
    ```
 
-4. Access the build output under `dist/`.
+4. Access the build output under `out/dist/`.
 
 [ci-image]: https://img.shields.io/github/workflow/status/RogWilco/Resume/CI?logo=GitHub&logoColor=white
 [ci-url]: https://github.com/RogWilco/Resume/actions?query=workflow%3ACI
