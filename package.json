@@ -1,21 +1,20 @@
 {
   "name": "@rogwilco/resume",
   "version": "3.0.0",
-  "author": "Nick Williams <git@nickawilliams.com>",
-  "license": "BSD-3-Clause",
   "description": "My resume.",
   "homepage": "http://www.nickawilliams.com/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rogwilco/Resume.git"
   },
-  "engines": {
-    "node": "20.x",
-    "npm": "10.x",
-    "yarn": "1.x"
-  },
+  "license": "BSD-3-Clause",
+  "author": "Nick Williams <git@nickawilliams.com>",
   "scripts": {
-    "clean": "cat .cleanrc | sed -E '/^#.*$/ d' | sed '/^\\s*$/ d' | xargs rm -rf"
+    "build": "tsc && vite build && vite preview",
+    "clean": "cat .cleanrc | sed -E '/^#.*$/ d' | sed '/^\\s*$/ d' | xargs rm -rf",
+    "dist": "tsc && vite build --config vite.config.dist.ts",
+    "start": "vite preview",
+    "start:watch": "vite"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -43,5 +42,10 @@
     "typescript": "^5.4.5",
     "vite": "^5.2.12",
     "yarn": "^1.22.22"
+  },
+  "engines": {
+    "node": "20.x",
+    "npm": "10.x",
+    "yarn": "1.x"
   }
 }
