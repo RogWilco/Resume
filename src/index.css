@@ -45,6 +45,7 @@ li {
   font-size: 10pt;
   line-height: 0.9em;
   margin: 2px;
+  margin-right: 6px;
   padding: 5px;
 }
 
@@ -298,5 +299,77 @@ li {
 
   .history h3 {
     color: #888888;
+  }
+}
+
+@media print {
+  /* Common Overrides */
+  .tag {
+    padding: 3px;
+    margin: 1px;
+    border: none; /* Negate the border */
+    font-size: unset; /* Reset the font size */
+  }
+
+  /* Content Overrides */
+  .footer {
+    font-size: 8pt;
+  }
+
+  /* Profile Section Overrides */
+  .profile .content {
+    font-size: 8pt;
+  }
+
+  .profile h2 {
+    font-size: 10pt;
+  }
+
+  .profile h3 {
+    font-size: 8pt;
+  }
+
+  /* History Section Overrides */
+  .history h4 {
+    font-size: 8pt;
+  }
+
+  .history h3 {
+    font-size: 8pt;
+    left: 50px;
+  }
+
+  .history h5 {
+    font-size: 8pt;
+    margin-top: -1.7em;
+  }
+
+  .history li {
+    font-size: 8pt;
+  }
+
+  .history ul.experience li.employer {
+    page-break-inside: avoid;
+  }
+
+  .history ul.experience li.employer .details > div.tags {
+    margin-left: 2em;
+  }
+
+  /* Negating styles not present in print.css */
+  .resume,
+  .letter {
+    width: auto; /* Remove specific width */
+    margin: unset; /* Reset margin */
+  }
+
+  .profile h2:first-of-type {
+    margin-top: unset; /* Reset the top margin */
+  }
+
+  /* Dark mode negation */
+  html {
+    background-color: white;
+    color: black;
   }
 }
