@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
     envPrefix: 'RESUME_',
     plugins: [react()],
     build: {
-      outDir: 'out/build',
+      outDir: 'out/dist',
     },
     server: {
       port: Number(env.RESUME_PORT ?? 3001),
